@@ -1,7 +1,10 @@
 body{
-    background-color: darkcyan;
+    background-color: azure;
 }
 h1{
 text-align: center;
-color: purple;
+color: royalblue;
+}
+p {
+    color: black;
 }
