@@ -1,12 +1,15 @@
 /* Estilos generales aplicables a todas las páginas */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Estilos específicos para index.html */
 #index {
+    font-family: "New Amsterdam", sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: royalblue;
     color: white;
 }
@@ -19,6 +22,21 @@ body {
 #index p {
     color: black;
 }
+
+#index .image-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Espacio superior, ajusta según sea necesario */
+}
+
+/* Estilos para la imagen en index.html */
+#index .image-container img {
+    width: 25%; /* Reduce el tamaño de la imagen a la mitad */
+    height: auto; /* Mantiene la relación de aspecto original */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+
 
 /* Estilos específicos para pagina1.html */
 #pagina1 {
@@ -35,17 +53,43 @@ body {
     color: black;
 }
 
+/* Estilos específicos para pagina2.html */
+#pagina2 {
+    background-color: rgb(23, 85, 106);
+    color: black;
+}
+
+#pagina2 h1 {
+    font-family: "New Amsterdam", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: royalblue;
+}
+
+#pagina2 p {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
 /* Estilos específicos para pagina3.html */
 
-#bio {
-    background-color: red;
+#bio{
+    background-color: lightseagreen;
     color: black;
 }
 
 #bio h1{
-    color: blue;
+    font-family: "New Amsterdam", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
 }
 
-#bio p {
+#bio p{
+    text-align: justify;
     color: black;
 }
