@@ -1,17 +1,36 @@
-.new-amsterdam-regular {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+/* Estilos generales aplicables a todas las páginas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-body{
-    background-color: azure;
+/* Estilos específicos para index.html */
+#index {
+    background-color: royalblue;
+    color: white;
 }
-h1{
-text-align: center;
-color: royalblue;
+
+#index h1 {
+    text-align: center;
+    color: white;
 }
-p {
+
+#index p {
     color: black;
+}
+
+/* Estilos específicos para pagina1.html */
+#pagina1 {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+#pagina1 h1 {
+    text-align: left;
+    color: darkblue;
+}
+
+#pagina1 p {
+    color: darkgray;
 }
