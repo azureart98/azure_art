@@ -13,7 +13,7 @@ body {
 
 #index h1 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #index p {
@@ -23,7 +23,7 @@ body {
 /* Estilos específicos para pagina1.html */
 #pagina1 {
     background-color: lightblue;
-    color: darkblue;
+    color: black;
 }
 
 #pagina1 h1 {
@@ -32,5 +32,20 @@ body {
 }
 
 #pagina1 p {
-    color: darkgray;
+    color: black;
+}
+
+/* Estilos específicos para pagina3.html */
+
+#bio {
+    background-color: red;
+    color: black;
+}
+
+#bio h1{
+    color: blue;
+}
+
+#bio p {
+    color: black;
 }
