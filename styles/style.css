@@ -77,12 +77,13 @@ body {
 /* Estilos específicos para pagina3.html */
 
 #bio{
-    background-color: lightseagreen;
+    background-color: cornflowerblue;
     color: black;
 }
 
 #bio h1{
     font-family: "New Amsterdam", sans-serif;
+    font-size: 400%;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -90,6 +91,24 @@ body {
 }
 
 #bio p{
+    font-family: "Moderustic", sans-serif;
+    font-size: 125%;
+    width: 50%;
+    margin: 0 auto;
     text-align: justify;
     color: black;
+}
+
+
+#bio .image-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Espacio superior, ajusta según sea necesario */
+}
+
+/* Estilos para la imagen en index.html */
+#bio .image-container img {
+    width: 25%; /* Reduce el tamaño de la imagen a la mitad */
+    height: auto; /* Mantiene la relación de aspecto original */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
 }
