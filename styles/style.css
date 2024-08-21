@@ -10,7 +10,7 @@ body {
     font-family: "New Amsterdam", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: royalblue;
+    background-color: cornflowerblue;
     color: white;
 }
 
@@ -40,37 +40,56 @@ body {
 
 /* Estilos específicos para pagina1.html */
 #pagina1 {
-    background-color: lightblue;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 #pagina1 h1 {
-    text-align: left;
-    color: darkblue;
+    font-family: "Moderustic", sans-serif;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#pagina1 h2 {
+    font-family: "Moderustic", sans-serif;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
 
 #pagina1 p {
-    color: black;
+    font-family: "Moderustic", sans-serif;
+    text-align: justify;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
 
 /* Estilos específicos para pagina2.html */
 #pagina2 {
-    background-color: rgb(23, 85, 106);
+    background-color: cornflowerblue;
     color: black;
 }
 
 #pagina2 h1 {
+    text-align: center;
     font-family: "New Amsterdam", sans-serif;
+    font-size: 250%; 
     margin: 0;
     padding: 0;
-    text-align: left;
-    color: royalblue;
+    color: black ;
 }
 
 #pagina2 p {
-    font-family: "Arial", sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: "Moderustic", sans-serif;
+    font-size: 125%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
     color: black;
 }
 
