@@ -169,7 +169,7 @@ nav ul li a:hover {
 
 /* Estilos para la imagen en index.html */
 #bio .image-container img {
-    width: 25%; /* Reduce el tamaño de la imagen a la mitad */
+    width: 15%; /* Reduce el tamaño de la imagen a la mitad */
     height: auto; /* Mantiene la relación de aspecto original */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
 }
