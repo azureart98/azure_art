@@ -3,20 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semblanza UEA 9</title>
+    <title>azure_art</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para que el video ocupe todo el fondo */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Para que quede detrás del contenido */
+        }
+
+        /* Asegura que el contenido no sea transparente */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'New Amsterdam', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            z-index: 1; /* Por encima del video */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 25%;
+            height: auto;
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body id="index">
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets/videos/indexback.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+
     <h1>azure_art</h1>
     <section>
         <nav>
             <ul>
-                <li><a href="html/pagina3.html">Bio</a></li>
-                <li><a href="html/pagina1.html">Gaming Impact</a></li>
-                <li><a href="html/pagina2.html">Manifiesto ejemplo</a></li>
+                <li><a href="html/bio.html">Bio</a></li>
+                <li><a href="html/portafolio.html">Portafolio</a></li>
+                <li><a href="html/pagina2.html">Contacto</a></li>
             </ul>
         </nav>
     </section>
