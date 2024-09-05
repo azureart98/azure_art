@@ -2,40 +2,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Raleway", sans-serif; /* Fuente predeterminada para el body */
-    color: white; /* Color de texto blanco por defecto */
-    background-color: #000; /* Fondo oscuro para resaltar el texto blanco */
+    font-family: "Raleway", sans-serif;
+    background-color: black;
 }
 
-/* Estilo para el h1 */
-#portafolio h1 {
-    font-family: "Merriweather", serif; /* Fuente específica para el h1 */
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    font-size: 2.5rem; /* Tamaño de fuente ajustado */
-}
-
-/* Estilo para los h2 */
+/* Estilo para los títulos */
+#portafolio h1,
 #portafolio h2 {
-    font-family: "Lora", serif; /* Fuente específica para los h2 */
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    font-size: 2rem; /* Tamaño de fuente ajustado */
+    color: white;
 }
 
 /* Estilo para los párrafos */
 #portafolio p {
-    font-family: "Raleway", sans-serif; /* Fuente específica para los párrafos */
+    font-family: "Lora", sans-serif;
+    font-size: 1.2rem; /* Cambia el tamaño de fuente a algo más manejable */
+    margin: 0;
+    padding: 0;
     text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 1.2rem; /* Tamaño de fuente ajustado */
-    max-width: 80%; /* Limita el ancho del texto para mejorar la legibilidad */
+    color: white;
 }
 
-/* Estilo para cada sección */
+/* Cada section se ajusta dinámicamente al contenido */
 section {
     width: 100%;
     position: relative;
@@ -44,11 +34,36 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Ejemplo para la primera sección */
+#obra1 {
+    background-image: url("../assets/imagenes/fondo1.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-height: 100vh;
+}
+
+#obra2 {
+    background-image: url("../assets/imagenes/fondo2.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-height: 100vh;
+}
+
+#obra3 {
+    background-image: url("../assets/imagenes/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-height: 100vh;
 }
 
 /* Contenedor para los videos */
