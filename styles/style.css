@@ -1,10 +1,16 @@
 /* Estilos generales aplicables a todas las páginas */
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
 }
-
+.texto{
+    padding: 5px;
+}
 /* Estilos específicos para index.html */
 #index {
     font-family: 'Lora', serif;
@@ -61,10 +67,6 @@ nav ul li a:hover {
     color: black !important; /* Mantén el color del texto en negro, utilizando !important */
 }
 
-
-
-
-
 #index .image-container {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -79,66 +81,8 @@ nav ul li a:hover {
 }
 
 
-
-/* Estilos específicos para pagina1.html */
-#pagina1 {
-    background-color: black;
-    color: white;
-}
-
-#pagina1 h1 {
-    font-family: "Moderustic", sans-serif;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-#pagina1 h2 {
-    font-family: "Moderustic", sans-serif;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-#pagina1 p {
-    font-family: "Moderustic", sans-serif;
-    text-align: justify;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-/* Estilos específicos para pagina2.html */
-#pagina2 {
-    background-color: cornflowerblue;
-    color: black;
-}
-
-#pagina2 h1 {
-    text-align: center;
-    font-family: "New Amsterdam", sans-serif;
-    font-size: 250%; 
-    margin: 0;
-    padding: 0;
-    color: black ;
-}
-
-#pagina2 p {
-    font-family: "Moderustic", sans-serif;
-    font-size: 125%;
-    width: 50%;
-    margin: 0 auto;
-    text-align: justify;
-    color: black;
-}
-
-/* Estilos específicos para pagina3.html */
-
 #bio{
-    background-color: cornflowerblue;
+    background-color: lightblue;
     color: black;
 }
 
@@ -172,4 +116,109 @@ nav ul li a:hover {
     width: 15%; /* Reduce el tamaño de la imagen a la mitad */
     height: auto; /* Mantiene la relación de aspecto original */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+/* Estilo general del portafolio */
+#portafolio {
+    background-color: black;
+    font-family: "Moderustic", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para los títulos */
+#portafolio h1,
+#portafolio h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Estilo para los párrafos */
+#portafolio p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Cada section se ajusta dinámicamente al contenido */
+section {
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Imágenes o videos de fondo para cada sección */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-position: center; /* Centra la imagen o video */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+/* Ejemplo para la primera sección */
+#obra1::before {
+    background-image: url("../assets/imagenes/fondo1.jpg"); /* Aquí va tu imagen de fondo */
+}
+
+#obra2::before {
+    background-image: url("../assets/imagenes/fondo2.jpg"); /* Aquí va tu imagen de fondo */
+}
+
+#obra3::before {
+    background-image: url("../assets/imagenes/fondo3.jpg") /* Aquí va tu imagen de fondo */
+}
+
+/* Contenedor para los videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos específicos para pagina2.html */
+#contacto{
+    background-color: cornflowerblue;
+    color: black;
+}
+
+#contacto h1{
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 250%; 
+    margin: 0;
+    padding: 0;
+    color: black ;
+}
+
+#contacto p{
+    font-family: "Moderustic", sans-serif;
+    font-size: 125%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: justify;
+    color: black;
 }

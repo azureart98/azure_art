@@ -1,0 +1,68 @@
+/* Estilo para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif; /* Fuente predeterminada para el body */
+    color: white; /* Color de texto blanco por defecto */
+    background-color: #000; /* Fondo oscuro para resaltar el texto blanco */
+}
+
+/* Estilo para el h1 */
+#portafolio h1 {
+    font-family: "Merriweather", serif; /* Fuente específica para el h1 */
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2.5rem; /* Tamaño de fuente ajustado */
+}
+
+/* Estilo para los h2 */
+#portafolio h2 {
+    font-family: "Lora", serif; /* Fuente específica para los h2 */
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2rem; /* Tamaño de fuente ajustado */
+}
+
+/* Estilo para los párrafos */
+#portafolio p {
+    font-family: "Raleway", sans-serif; /* Fuente específica para los párrafos */
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+    max-width: 80%; /* Limita el ancho del texto para mejorar la legibilidad */
+}
+
+/* Estilo para cada sección */
+section {
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Contenedor para los videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
