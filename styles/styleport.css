@@ -10,6 +10,7 @@ body {
 #portafolio h1,
 #portafolio h2 {
     text-align: center;
+    font-size: 2rem;
     margin: 0;
     padding: 20px 0;
     color: white;
@@ -21,7 +22,7 @@ body {
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: justify;
     color: white;
 }
 
@@ -39,6 +40,7 @@ section {
     background-repeat: no-repeat;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 10px 10px 5px black; /* Sombreado del texto */
 }
 
 /* Ejemplo para la primera sección */
@@ -48,7 +50,9 @@ section {
     background-attachment: fixed;
     background-size: 100% 100%;
     max-height: 100vh;
+
 }
+
 
 #obra2 {
     background-image: url("../assets/imagenes/fondo2.jpg"); 
@@ -58,6 +62,17 @@ section {
     max-height: 100vh;
 }
 
+#obra1 p, #obra2 p {
+    font-family: "Lora", sans-serif;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 0;
+    color: white;
+    text-align: justify; /* Justifica el texto */
+    max-width: 80%; /* Ajusta el ancho máximo */
+}
+
+
 /* Estilo para la sección Tres ecos */
 #obra3 {
     display: flex;
@@ -65,12 +80,11 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
-    background-image: url("../assets/imagenes/fondo3.jpg");
+    background-image: url("../assets/imagenes/fondo5.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     color: white;
-    text-shadow: 1px 1px 5px black; /* Sombreado del texto */
 }
 
 /* Contenedor principal de la obra 3 */
@@ -92,7 +106,7 @@ section {
 
 /* Imágenes horizontales */
 .horizontal-images img {
-    width: 700px; /* Ajusta el tamaño según necesites */
+    width: 1000px; /* Ajusta el tamaño según necesites */
     height: auto;
     border: 2px solid white;
 }
@@ -112,34 +126,41 @@ section {
     border: 2px solid white;
 }
 
-/* Contenedor del terrario */
 .terrario-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: transparent; /* Asegura que no hay fondo */
 }
 
-/* Imagen del terrario */
 .terrario-container a img {
-    max-width: 200px; /* Ajusta el tamaño */
+    max-width: 200px;
     height: auto;
     margin: 20px;
-    transition: transform 0.3s ease; /* Animación al hacer hover */
+    transition: transform 0.3s ease;
+    border: none !important; /* Fuerza la eliminación del borde */
+    outline: none !important; /* Asegura que no haya contorno */
+    background-color: transparent !important; /* Asegura que no haya fondo */
 }
+
 
 .terrario-container a img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
+
 /* Texto dentro de la sección */
 #obra3 p {
     font-family: "Lora", sans-serif;
     font-size: 1.2rem;
     margin-top: 10px;
+    margin: 10px;
+    padding: auto;
     color: white;
-    text-shadow: 1px 1px 5px black; /* Sombreado del texto */
+    text-shadow: 5px 5px 1px green;
+    text-align: justify;
 }
 
 
@@ -178,12 +199,19 @@ section {
 
 /* Estilo del footer */
 footer {
-    text-align: center;
     padding: 20px;
     background-color: black;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
+    text-align: center; /* Centra el texto */
 }
+
+footer p {
+    margin: 0;
+    color: white; /* Color del texto */
+    font-family: "Lora", sans-serif; /* Puedes elegir la fuente que prefieras */
+}
+
 
 /* Estilo para la imagen del botón */
 .home-button {
@@ -215,13 +243,13 @@ footer {
 }
 
 #obra3 img {
-    max-width: 300px;
+    max-width: 450px;
     height: auto;
     border: 2px solid white;
 }
 
 #obra3 a img {
-    max-width: 200px; /* Ajusta el tamaño del PNG del terrario */
+    max-width: 300px; /* Ajusta el tamaño del PNG del terrario */
     height: auto;
     margin-top: 20px;
     transition: transform 0.3s ease;  /* Animación al hacer hover */
