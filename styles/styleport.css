@@ -40,7 +40,7 @@ section {
     background-repeat: no-repeat;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    text-shadow: 10px 10px 5px black; /* Sombreado del texto */
+    text-shadow: 5px 5px 5px black; /* Sombreado del texto */
 }
 
 /* Ejemplo para la primera sección */
@@ -159,7 +159,7 @@ section {
     margin: 10px;
     padding: auto;
     color: white;
-    text-shadow: 5px 5px 1px green;
+    text-shadow: 2px 2px 1px green;
     text-align: justify;
 }
 
@@ -207,6 +207,8 @@ footer {
 }
 
 footer p {
+    text-align: center !important;
+    font-size: 2em !important;
     margin: 0;
     color: white; /* Color del texto */
     font-family: "Lora", sans-serif; /* Puedes elegir la fuente que prefieras */
@@ -215,7 +217,7 @@ footer p {
 
 /* Estilo para la imagen del botón */
 .home-button {
-    width: 40px;  /* Ajusta el tamaño según lo que necesites */
+    width: 60px;  /* Ajusta el tamaño según lo que necesites */
     height: auto;
     margin-top: 10px;
     transition: transform 0.3s ease;  /* Añade una pequeña animación al hacer hover */

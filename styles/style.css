@@ -89,35 +89,86 @@ nav ul li a:hover {
 #bio h1{
     font-family: "Lora", sans-serif;
     font-size: 400%;
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    text-align: center;
-    color: black;
+    text-align: left;
+    color: white;
+    text-shadow: 3px 3px 1px lightblue;
 }
 
 #bio p{
     font-family: "Merriweather", sans-serif;
-    font-size: 125%;
+    font-size: 90%;
     width: 50%;
-    margin: 0 auto;
+    margin: 10px;
+    padding: 10px;
+    align-items: left;
     text-align: justify;
-    color: black;
+    color: white;
+    text-shadow: 2px 2px 1px lightblue;
 }
 
 
 #bio .image-container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 20px; /* Espacio superior, ajusta según sea necesario */
+    justify-content: left; /* Centra horizontalmente */
+    margin-top: 20px; 
+    margin-left: 180px;/* Espacio superior, ajusta según sea necesario */
+    padding-bottom: 40px;
 }
 
 /* Estilos para la imagen en index.html */
 #bio .image-container img {
-    width: 15%; /* Reduce el tamaño de la imagen a la mitad */
+    width: 30%; /* Reduce el tamaño de la imagen a la mitad */
     height: auto; /* Mantiene la relación de aspecto original */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
 }
 
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Envía el video al fondo */
+    object-fit: cover; /* Ajusta el video para cubrir todo el fondo */
+}
+
+#bio {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima del video */
+}
+
+
+
+.footerbio {
+    padding: 20px;
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center; /* Centra el texto */
+    color: white;
+    font-family: "Lora", sans-serif;
+    position: relative;
+}
+
+.footerbio p {
+    text-align: center !important;
+    margin: 0;
+    color: white;
+    text-shadow: none !important;
+}
+
+.home-button {
+    width: 60px;  /* Ajusta el tamaño según lo que necesites */
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s ease;  /* Añade una pequeña animación al hacer hover */
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 /* Estilos específicos para la sección de contacto */
 .contacto {
     padding: 20px;
