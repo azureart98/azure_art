@@ -35,52 +35,60 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    text-shadow: 5px 5px 5px black; /* Sombreado del texto */
+    text-shadow: 5px 5px 5px black;
 }
 
-/* Ejemplo para la primera sección */
+/* Obra 1 */
 #obra1 {
-    background-image: url("../assets/imagenes/fondo1.jpg"); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    max-height: 100vh;
-
-}
-
-
-#obra2 {
-    background-image: url("../assets/imagenes/fondo2.jpg"); 
+    background-image: url("../assets/imagenes/fondo1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     max-height: 100vh;
 }
 
-#obra1 p, #obra2 p {
+#obra1 p {
     font-family: "Lora", sans-serif;
     font-size: 1.2rem;
     margin: 10px;
     padding: 0;
     color: white;
-    text-align: justify; /* Justifica el texto */
-    max-width: 80%; /* Ajusta el ancho máximo */
+    text-align: justify;
+    max-width: 80%;
 }
 
+/* Obra 2 */
+#obra2 {
+    background-image: url("../assets/imagenes/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-height: 100vh;
+}
 
-/* Estilo para la sección Tres ecos */
+#obra2 p {
+    font-family: "Lora", sans-serif;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 0;
+    color: white;
+    text-align: justify;
+    max-width: 80%;
+}
+
+/* Obra 3 */
 #obra3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 0;
-    background-image: url("../assets/imagenes/fondo5.jpg");
+    background-image: url("../assets/imagenes/fondo3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -93,20 +101,20 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Ajusta según necesites */
+    max-width: 1200px;
 }
 
 /* Contenedor de imágenes horizontales */
 .horizontal-images {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea a la izquierda */
+    align-items: flex-start;
     gap: 10px;
 }
 
 /* Imágenes horizontales */
 .horizontal-images img {
-    width: 1000px; /* Ajusta el tamaño según necesites */
+    width: 1000px;
     height: auto;
     border: 2px solid white;
 }
@@ -115,13 +123,13 @@ section {
 .vertical-images {
     display: flexbox;
     flex-direction: column;
-    align-items: flex-end; /* Alinea a la derecha */
+    align-items: flex-end;
     gap: 10px;
 }
 
 /* Imágenes verticales */
 .vertical-images img {
-    width: 200px; /* Ajusta el tamaño según necesites */
+    width: 200px;
     height: auto;
     border: 2px solid white;
 }
@@ -131,7 +139,7 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: transparent; /* Asegura que no hay fondo */
+    background-color: transparent;
 }
 
 .terrario-container a img {
@@ -139,17 +147,15 @@ section {
     height: auto;
     margin: 20px;
     transition: transform 0.3s ease;
-    border: none !important; /* Fuerza la eliminación del borde */
-    outline: none !important; /* Asegura que no haya contorno */
-    background-color: transparent !important; /* Asegura que no haya fondo */
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
 }
-
 
 .terrario-container a img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 
 /* Texto dentro de la sección */
 #obra3 p {
@@ -163,8 +169,7 @@ section {
     text-align: justify;
 }
 
-
-/* Nuevas secciones */
+/* Obra 4 */
 #obra4 {
     background-image: url("../assets/imagenes/fondo4.jpg");
     background-repeat: no-repeat;
@@ -173,16 +178,9 @@ section {
     max-height: 100vh;
 }
 
+/* Obra 5 */
 #obra5 {
     background-image: url("../assets/imagenes/fondo5.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    max-height: 100vh;
-}
-
-#obra6 {
-    background-image: url("../assets/imagenes/fondo6.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -203,29 +201,28 @@ footer {
     background-color: black;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
-    text-align: center; /* Centra el texto */
+    text-align: center;
 }
 
 footer p {
     text-align: center !important;
     font-size: 2em !important;
     margin: 0;
-    color: white; /* Color del texto */
-    font-family: "Lora", sans-serif; /* Puedes elegir la fuente que prefieras */
+    color: white;
+    font-family: "Lora", sans-serif;
 }
-
 
 /* Estilo para la imagen del botón */
 .home-button {
-    width: 60px;  /* Ajusta el tamaño según lo que necesites */
+    width: 60px;
     height: auto;
     margin-top: 10px;
-    transition: transform 0.3s ease;  /* Añade una pequeña animación al hacer hover */
+    transition: transform 0.3s ease;
 }
 
 /* Efecto hover en el botón */
 .home-button:hover {
-    transform: scale(1.1);  /* Agranda ligeramente el botón al hacer hover */
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -251,10 +248,10 @@ footer p {
 }
 
 #obra3 a img {
-    max-width: 300px; /* Ajusta el tamaño del PNG del terrario */
+    max-width: 300px;
     height: auto;
     margin-top: 20px;
-    transition: transform 0.3s ease;  /* Animación al hacer hover */
+    transition: transform 0.3s ease;
 }
 
 /* Efecto hover en la imagen del terrario */
