@@ -307,3 +307,44 @@ body {
     transform: scale(1.1);  /* Agranda ligeramente el botón al hacer hover */
     cursor: pointer;
 }
+
+/* Media Query para tablets (máximo 768px) */
+@media (max-width: 48rem) { /* 768px */
+    .contacto {
+        width: 90%; /* Ajusta el ancho al 90% */
+        max-width: 40rem; /* Ajusta el ancho máximo */
+        padding: 1rem; /* Reduce el padding */
+    }
+
+    .contacto h1 {
+        font-size: 2rem; /* Reduce el tamaño del título */
+    }
+
+    .info-contacto p, .info-contacto a {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+
+    .home-button {
+        width: 3.125rem; /* 50px, Reduce el tamaño del botón */
+    }
+}
+
+/* Media Query para móviles (máximo 480px) */
+@media (max-width: 30rem) { /* 480px */
+    .contacto {
+        width: 95%; /* Ocupa casi todo el ancho */
+        padding: 0.75rem; /* Reduce el padding */
+    }
+
+    .contacto h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del título aún más */
+    }
+
+    .info-contacto p, .info-contacto a {
+        font-size: 0.9375rem; /* Aprox. 15px */
+    }
+
+    .home-button {
+        width: 2.5rem; /* 40px, tamaño más pequeño del botón */
+    }
+}
