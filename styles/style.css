@@ -82,18 +82,30 @@ body {
 
 #bio h1{
     font-family: "Lora", sans-serif;
-    font-size: 400%;
-    margin: 10px;
+    font-size: 2.5rem;
+    margin: 1rem;
     padding: 0;
     text-align: left;
     color: white;
     text-shadow: 3px 3px 1px lightblue;
 }
 
+@media (max-width: 768px) {
+    #bio h1 {
+        font-size: 2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    #bio h1 {
+        font-size: 1.5rem; 
+    }
+}
+
 #bio p{
     font-family: "Merriweather", sans-serif;
-    font-size: 90%;
-    width: 50%;
+    font-size: 1rem;
+    width: 100%;
     margin: 10px;
     padding: 10px;
     align-items: left;
@@ -102,30 +114,58 @@ body {
     text-shadow: 2px 2px 1px lightblue;
 }
 
+@media (min-width: 768px) {
+    #bio p {
+        width: 80%; /* Usa 80% para pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    #bio p {
+        width: 50%; /* 50% en pantallas grandes */
+    }
+}
 
 #bio .image-container {
     display: flex;
     justify-content: left; /* Centra horizontalmente */
     margin-top: 20px; 
-    margin-left: 180px;/* Espacio superior, ajusta según sea necesario */
-    padding-bottom: 40px;
-}
+    margin-left: 20px;/* Espacio superior, ajusta según sea necesario */
+    padding-bottom: 20px;
+    }
 
+@media (max-width: 768px) {
+#bio .image-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; 
+    margin-left: 20px;/* Espacio superior, ajusta según sea necesario */
+    padding-bottom: 20px;
+    }
+}
 /* Estilos para la imagen en index.html */
 #bio .image-container img {
-    width: 30%; /* Reduce el tamaño de la imagen a la mitad */
+    width: 15%; /* Reduce el tamaño de la imagen a la mitad */
     height: auto; /* Mantiene la relación de aspecto original */
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-}
+    }
+
 
 #background-video {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    z-index: -1; /* Envía el video al fondo */
-    object-fit: cover !important; /* Ajusta el video para cubrir todo el fondo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover; /* Asegura que el video cubra completamente la pantalla */
+}
+
+@media (max-height: 768px) {
+    #background-video {
+        min-height: 100vh;
+    }
 }
 
 #bio {
@@ -134,13 +174,24 @@ body {
 }
 
 .footerbio {
-    padding: 20px;
+    display: flex;
+    padding: 15px;
     background-color: black;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    align-items: center;
     text-align: center; /* Centra el texto */
     color: white;
     font-family: "Lora", sans-serif;
     position: relative;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .footerbio {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
 
 .footerbio p {
@@ -151,10 +202,22 @@ body {
 }
 
 .home-button {
-    width: 60px;  /* Ajusta el tamaño según lo que necesites */
+    width: 40px;  /* Ajusta el tamaño según lo que necesites */
     height: auto;
     margin-top: 10px;
     transition: transform 0.3s ease;  /* Añade una pequeña animación al hacer hover */
+}
+
+@media (max-width: 768px) {
+    .home-button {
+        width: 40px; /* Reduce el tamaño del botón en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-button {
+        width: 30px; /* Tamaño aún menor en pantallas más pequeñas */
+    }
 }
 
 .home-button:hover {
@@ -176,12 +239,12 @@ body {
 /* Estilos para la sección de contacto */
 .contacto {
     width: 60%; /* Ajusta el ancho del recuadro */
-    max-width: 800px; /* Ancho máximo para evitar que crezca demasiado */
-    padding: 20px;
+    max-width: 50rem; /* Ancho máximo para evitar que crezca demasiado */
+    padding: 1.25rem;
     background-color: steelblue;
-    border: 1px solid #444;
-    border-radius: 8px;
-    margin: 20px auto;
+    border: 0.625rem solid #444;
+    border-radius: 0.5rem;
+    margin: 1.25rem auto;
 }
 
 .contacto h1 {
@@ -189,7 +252,7 @@ body {
     font-size: 2.5em;
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .info-contacto p {
@@ -197,7 +260,7 @@ body {
     font-size: 1.2em;
     text-align: center;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .info-contacto ul {
@@ -210,12 +273,12 @@ body {
 }
 
 .info-contacto li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .info-contacto a {
     font-family: 'Lora', serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -227,14 +290,14 @@ body {
 
 /* Contenedor para el botón de home */
 .home-containercon {
-    margin-top: 20px; /* Espacio superior para el botón de home */
+    margin-top: 1.25rem; /* Espacio superior para el botón de home */
     display: flex;
     justify-content: center;
 }
 
 /* Estilo para la imagen del botón de home */
 .home-button {
-    width: 60px;  /* Ajusta el tamaño según lo que necesites */
+    width: 3.75rem;  /* Ajusta el tamaño según lo que necesites */
     height: auto;
     transition: transform 0.3s ease;  /* Animación al hacer hover */
 }
