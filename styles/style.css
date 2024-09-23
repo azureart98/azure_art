@@ -131,6 +131,7 @@ body {
     margin-top: 1.25rem; 
     margin-left: 1.25rem;/* Espacio superior, ajusta según sea necesario */
     padding-bottom: 1.25rem;
+    margin-left: 14rem;
     }
 
 @media (max-width: 768px) {
@@ -146,7 +147,8 @@ body {
 #bio .image-container img {
     width: 15%; /* Reduce el tamaño de la imagen a la mitad */
     height: auto; /* Mantiene la relación de aspecto original */
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 100%; 
+    border-radius: 10%;
     }
 
 
