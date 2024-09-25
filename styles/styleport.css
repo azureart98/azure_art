@@ -15,6 +15,9 @@ body {
     margin: 0;
     padding: 1.25rem 0;
     color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.313rem;
 }
 
 /* Estilo para los párrafos */
@@ -70,6 +73,9 @@ section {
     color: white;
     text-align: justify; /* Justifica el texto */
     max-width: 80%; /* Ajusta el ancho máximo */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.313rem;
 }
 
 
@@ -161,6 +167,9 @@ section {
     color: white;
     text-shadow: 0.125rem 0.125rem 0.063rem green;
     text-align: justify;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.313rem;
 }
 
 
@@ -181,6 +190,9 @@ section {
     color: white;
     text-align: justify; /* Justifica el texto */
     max-width: 80%; /* Ajusta el ancho máximo */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.313rem;
 }
 
 #obra5 {
@@ -199,6 +211,9 @@ section {
     color: white;
     text-align: justify; /* Justifica el texto */
     max-width: 80%; /* Ajusta el ancho máximo */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.313rem;
 }
 
 #obra6 {
