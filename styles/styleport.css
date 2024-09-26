@@ -65,7 +65,7 @@ section {
     max-height: 100vh;
 }
 
-#obra1 p, #obra2 p {
+#obra1 p{
     font-family: "Lora", sans-serif;
     font-size: 1.2rem;
     margin: 0.625rem;
@@ -76,6 +76,21 @@ section {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.625rem;
     border-radius: 0.313rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 0, 0, 0.9); /* Sombra anaranjada */
+}
+
+#obra2 p {
+    font-family: "Lora", sans-serif;
+    font-size: 1.2rem;
+    margin: 0.625rem;
+    padding: 0;
+    color: white;
+    text-align: justify; /* Justifica el texto */
+    max-width: 80%; /* Ajusta el ancho máximo */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 140, 0, 0.9); /* Sombra anaranjada */
 }
 
 
@@ -193,6 +208,8 @@ section {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.625rem;
     border-radius: 0.313rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 255, 100, 0.9); /* Sombra anaranjada */
+    
 }
 
 #obra5 {
@@ -214,6 +231,7 @@ section {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.625rem;
     border-radius: 0.313rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(150, 20, 0, 0.8); /* Sombra en rojo oscuro */
 }
 
 #obra6 {
